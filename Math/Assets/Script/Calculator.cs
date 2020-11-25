@@ -19,9 +19,9 @@ public class Calculator : MonoBehaviour
 /*    public double BottomHold;
     public double THoldC1;
     public double THoldC2;
-
+*/
     //test
-    public double chC1;
+ /*   public double chC1;
     public double chC2;
     public double chFC1;
     public double chFC2;
@@ -34,11 +34,22 @@ public class Calculator : MonoBehaviour
 
     void Update()
     {
+
+        
+
         hC1 = Controller.C1;
         hC2 = Controller.C2;
         hFC1 = Controller.FC1;
         hFC2 = Controller.FC2;
 
+        if( hC2 == 0 && hC1 < 1 )
+        {
+            hC2 = 1 - hC1;
+        } else
+        if ( hC2 == 0 && hC1 > 1 )
+        {
+            hC2 = 100 - hC1;
+        }
 /*      chC1 = hC1;
         chC2 = hC2;
         chFC1 = hFC1;
