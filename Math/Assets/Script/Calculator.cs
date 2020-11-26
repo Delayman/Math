@@ -55,8 +55,8 @@ public class Calculator : MonoBehaviour
         chFC1 = hFC1;
         chFC2 = hFC2;
 */
-        CF1 = (hFC1*hC1)/((hFC1*hC1)+(hFC2*hC2)) ;
-        CF2 = (hFC2*hC2)/((hFC1*hC1)+(hFC2*hC2)) ;
+        CF1 = ((hFC1*hC1)/((hFC1*hC1)+(hFC2*hC2)))*100 ;
+        CF2 = ((hFC2*hC2)/((hFC1*hC1)+(hFC2*hC2)))*100 ;
       
     } 
 
