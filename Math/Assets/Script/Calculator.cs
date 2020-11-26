@@ -15,28 +15,9 @@ public class Calculator : MonoBehaviour
 
     public Text TextBoxA1;
     public Text TexboxA2;
-    //hi hi this'me//
-/*    public double BottomHold;
-    public double THoldC1;
-    public double THoldC2;
-*/
-    //test
- /*   public double chC1;
-    public double chC2;
-    public double chFC1;
-    public double chFC2;
-*/
-    void Start()
-    {
-        Debug.Log("Byane calculator is started");
-        
-    }
 
     void Update()
     {
-
-        
-
         hC1 = Controller.C1;
         hC2 = Controller.C2;
         hFC1 = Controller.FC1;
@@ -50,11 +31,7 @@ public class Calculator : MonoBehaviour
         {
             hC2 = 100 - hC1;
         }
-/*      chC1 = hC1;
-        chC2 = hC2;
-        chFC1 = hFC1;
-        chFC2 = hFC2;
-*/
+
         CF1 = ((hFC1*hC1)/((hFC1*hC1)+(hFC2*hC2)))*100 ;
         CF2 = ((hFC2*hC2)/((hFC1*hC1)+(hFC2*hC2)))*100 ;
       

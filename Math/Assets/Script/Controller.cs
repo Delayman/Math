@@ -28,7 +28,6 @@ public class Controller : MonoBehaviour
     public void Awake() 
     {
         text.text = "Put the number between 0.00 - 1.00";
-
         
     }
     public void GetInputC1(string vC1)
